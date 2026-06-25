@@ -23,8 +23,7 @@ This work was conducted as part of a Bachelor's thesis at the University of Euro
 
 ```
 .
-├── notebooks/
-│   └── notebook.ipynb              # Full analysis pipeline (single notebook, organised by section)
+├── notebook.ipynb              # Full analysis pipeline (single notebook, organised by section)
 ├── figures/                        # All publication-ready figures (PDF, vector, 300+ ppi)
 │   ├── rq1_overall_performance_panel.pdf
 │   ├── rq1_confusion_matrix_default.pdf
