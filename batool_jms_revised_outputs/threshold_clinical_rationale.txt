@@ -1,0 +1,4 @@
+Three operating thresholds were evaluated.
+  Default (0.50): conventional decision boundary; balanced precision/recall.
+  Youden-J (0.53): maximises sensitivity + specificity sum; counterintuitively raises threshold above 0.50 in a balanced dataset, reducing recall.
+  Screening threshold (0.35): lowers threshold to achieve ≥80% recall, prioritising case detection over precision. This is the recommended threshold for low-resource preliminary screening use cases where missing a diabetic case (false negative) carries higher cost than a false alarm.

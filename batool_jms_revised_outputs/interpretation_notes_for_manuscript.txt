@@ -1,0 +1,71 @@
+=== MANUSCRIPT INTERPRETATION NOTES — GENERATED FROM ACTUAL RUN ===
+
+[C1] VALIDATION LABELLING: BRFSS 2021 is labelled 'temporal validation — same-source survey cohort, NOT independent external validation.' Consistent across all output files.
+
+[C2] CALIBRATION COLLAPSE: ECE=0.009 (balanced internal) to 0.276 (natural prevalence). Calibration intercept=-1.82 at natural prevalence. Predicted probabilities at ~14% prevalence must NOT be interpreted as absolute risk without recalibration. See c2_calibration_collapse_explanation.csv.
+
+[C3] UNDERPOWERED SUBGROUPS: 18-34 age group n_positive=100 (< 150 threshold). Flagged in figures. Even pooled, 18-44 FNR=72% (default) and 51% (screening threshold). MANUSCRIPT MUST STATE: The model is not recommended for screening in adults under 45 years of age at any evaluated threshold.
+
+[N1 FIX] WILCOXON MODEL SELECTION — REQUIRED MANUSCRIPT FRAMING:
+With N_SPLITS_CV=5 folds, the minimum achievable one-tailed Wilcoxon p-value is 0.03125.
+All comparisons returned p=0.25 — XGBoost exceeded each alternative in only 3/5 folds.
+Mean AUC advantage vs Gradient Boosting = 0.000364 (< fold-level SD of ~0.003).
+USE THIS EXACT WORDING IN METHODS/RESULTS:
+  'Wilcoxon signed-rank tests comparing fold-level AUC between XGBoost and each
+   alternative model yielded p=0.25 for all comparisons (one-tailed, n=5 folds;
+   minimum achievable p=0.03125), indicating no statistically significant fold-level
+   dominance. XGBoost was therefore selected on the basis of highest mean cross-validated
+   AUC (0.777) and consistency with the established BRFSS diabetes prediction literature.'
+
+[N2 FIX] DCA PRESENTATION — REQUIRED MANUSCRIPT STRUCTURE:
+PRIMARY figure: decision_curve_PRIMARY_natural_prevalence.pdf
+  -> Model provides positive net benefit over treat-all for pt=0.01-0.17 at ~14% prevalence.
+  -> Use as the main DCA figure in the manuscript.
+SUPPLEMENTARY figure: decision_curve_SUPPLEMENTARY_balanced_internal_test.pdf
+  -> Treat-all baseline is at 50% prevalence — not clinically interpretable.
+  -> Present as Supplementary Figure S1 only.
+USE THIS WORDING:
+  'Decision-curve analysis at natural prevalence (~14%) showed the model provides
+   positive net benefit over treat-all for threshold probabilities of 0.01-0.17 (Figure X).
+   Decision-curve analysis on the balanced internal test set is reported as Supplementary
+   Figure S1 for methodological completeness only; the treat-all baseline in that analysis
+   reflects the 50% training prevalence and is not clinically interpretable.'
+
+[M1] MODEL SELECTION: See N1 above for correct Wilcoxon framing.
+
+[M2] UMAP ERROR MAP: rq6_umap_error_projection.pdf generated (n=3,000 test obs).
+FN cluster in feature space = systematic lifestyle profiles associated with missed cases.
+
+[M3] IMPORTANCE DISCREPANCY: SHAP/permutation ratio 5-11x for lifestyle features.
+Consistent with correlated-feature underestimation by permutation. SHAP is primary.
+See rq2_permutation_vs_shap_comparison.csv.
+
+[M4] DUPLICATE PROFILES: 23,566 duplicate feature profiles in balanced set.
+Acknowledged as limitation; inflates effective sample size.
+
+[W2 FIX] TRIPOD ITEM 15 CORRECTION:
+Item 15 now reads 'Yes - partial'. Use this manuscript wording:
+  'Aggregate-level 95% bootstrap confidence intervals (n=500 iterations) are reported
+   for all primary performance metrics. Subgroup-level confidence intervals were not
+   computed due to small positive-case counts in several subgroup cells
+   (minimum n_positive=29 for Underweight BMI; 100 for age 18-34).'
+
+[A1] SCORECARD DISCLAIMER: Author-defined research framework. Not clinically validated.
+
+[A2] THRESHOLD RATIONALE: Screening threshold (0.35) recommended for low-resource preliminary screening. Youden-J (0.53) reduces recall — not appropriate for screening.
+See threshold_clinical_rationale.txt.
+
+[A3] PREDIABETES EXCLUSION: 5,619 rows excluded from BRFSS 2021. Reported in dataset_sanity_check_summary.csv (prediabetes_rows_excluded column).
+
+[A4] UNDERWEIGHT SUBGROUP: n_positive=29 in test set. Pool with Normal weight for claims.
+
+[JMS-1] TRIPOD+AI: tripod_ai_checklist.csv — 17 Yes, 1 Yes-partial, 2 Pending.
+Submit as supplementary material. Correct item 15 per W2 note above.
+
+[JMS-2] STUDY SCOPE: 'Preliminary lifestyle-only screening decision-support tool.'
+Not a diagnostic model. Use decision-support and preliminary screening language throughout.
+
+[JMS-3] CODE/DATA AVAILABILITY: Deposit to GitHub/Zenodo before submission.
+BRFSS data: publicly available from CDC BRFSS portal and Kaggle (alexteboul dataset).
+
+=== END NOTES ===

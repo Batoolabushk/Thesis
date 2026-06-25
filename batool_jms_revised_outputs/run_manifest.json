@@ -1,0 +1,84 @@
+{
+  "created_at_utc": "2026-06-05T17:28:26.101003Z",
+  "notebook_version": "v2_revised_jms_submission_ready",
+  "notebook_purpose": "Journal of Medical Systems \u2014 technical-ready reliability/safety audit",
+  "fixes_applied": [
+    "C1",
+    "C2",
+    "C3",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "JMS-1",
+    "JMS-2",
+    "JMS-3"
+  ],
+  "primary_path": "/kaggle/input/datasets/alexteboul/diabetes-health-indicators-dataset/diabetes_binary_5050split_health_indicators_BRFSS2015.csv",
+  "natural_prevalence_path": "/kaggle/input/datasets/alexteboul/diabetes-health-indicators-dataset/diabetes_binary_health_indicators_BRFSS2015.csv",
+  "external_path": "/kaggle/input/datasets/julnazz/diabetes-health-indicators-dataset/diabetes_012_health_indicators_BRFSS2021.csv",
+  "critical_checks": {
+    "primary_and_natural_are_different_files": true,
+    "natural_filename": "diabetes_binary_health_indicators_BRFSS2015.csv",
+    "natural_positive_prevalence": 0.13933301797540207,
+    "natural_rows": 253680,
+    "primary_rows": 70692,
+    "thresholds_selected_after_calibration": true,
+    "external_validation_label": "temporal_validation_same_source_survey_cohort_NOT_independent_external"
+  },
+  "selected_features": [
+    "BMI",
+    "Smoker",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "lifestyle_features": [
+    "BMI",
+    "Smoker",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump"
+  ],
+  "demographic_features": [
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "random_state": 42,
+  "stability_seeds": [
+    11,
+    42,
+    77,
+    101,
+    202
+  ],
+  "test_size": 0.2,
+  "n_splits_cv": 5,
+  "n_bootstraps": 500,
+  "best_model_name": "XGBoost",
+  "thresholds": {
+    "default_0_50": 0.5,
+    "youden_j": 0.53,
+    "recall_at_least_80": 0.35000000000000003
+  },
+  "recommended_threshold_for_screening": "recall_at_least_80",
+  "code_availability": "Deposit to GitHub/Zenodo before manuscript submission (JMS-3)",
+  "data_availability": "BRFSS data publicly available via CDC BRFSS portal and Kaggle (alexteboul/diabetes-health-indicators-dataset)",
+  "outputs": {
+    "tables": "/kaggle/working/batool_jms_revised_outputs/tables",
+    "figures": "/kaggle/working/batool_jms_revised_outputs/figures",
+    "models": "/kaggle/working/batool_jms_revised_outputs/models"
+  }
+}

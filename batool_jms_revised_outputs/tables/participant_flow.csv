@@ -1,0 +1,7 @@
+stage,n,positive_n,positive_prevalence
+Balanced BRFSS 2015 source loaded,70692,35346,0.5
+Rows after target handling,70692,35346,0.5
+Training split (model development + calibration),56553,28277,0.5000088412639471
+Held-out internal test split,14139,7069,0.49996463682014286
+"Natural-prevalence 2015 (prevalence-shift validation — same BRFSS source, not independent external)",253680,35346,0.13933301797540207
+Temporal validation — BRFSS 2021 same-source survey (NOT independent external validation),230759,33568,0.14546778240501995

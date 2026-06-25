@@ -1,0 +1,11 @@
+dataset,bin,mean_predicted_probability,observed_positive_rate
+natural_prevalence_2015 (prevalence-shift — NOT independent external),1,0.05643830942128871,0.008634561795988854
+natural_prevalence_2015 (prevalence-shift — NOT independent external),2,0.11964102570447688,0.020528439205759037
+natural_prevalence_2015 (prevalence-shift — NOT independent external),3,0.19539927252303665,0.03805205047318612
+natural_prevalence_2015 (prevalence-shift — NOT independent external),4,0.28212799310243614,0.060682381645743966
+natural_prevalence_2015 (prevalence-shift — NOT independent external),5,0.3681849115584561,0.08662163763479085
+natural_prevalence_2015 (prevalence-shift — NOT independent external),6,0.45996074825091066,0.1222486267482177
+natural_prevalence_2015 (prevalence-shift — NOT independent external),7,0.5414660099855895,0.15711863738516738
+natural_prevalence_2015 (prevalence-shift — NOT independent external),8,0.6228754703085039,0.21230781454848835
+natural_prevalence_2015 (prevalence-shift — NOT independent external),9,0.6987589558305557,0.27637256066183746
+natural_prevalence_2015 (prevalence-shift — NOT independent external),10,0.8108829435384677,0.4123004139562389

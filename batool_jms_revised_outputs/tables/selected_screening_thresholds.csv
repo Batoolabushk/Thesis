@@ -1,0 +1,4 @@
+threshold_strategy,threshold,selected_using
+default_0_50,0.5,calibrated_validation_probabilities
+youden_j,0.53,calibrated_validation_probabilities
+recall_at_least_80,0.35000000000000003,calibrated_validation_probabilities

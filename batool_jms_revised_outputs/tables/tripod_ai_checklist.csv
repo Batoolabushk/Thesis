@@ -1,0 +1,23 @@
+item,domain,description,status
+1a,Title and abstract,Title identifies study as a machine learning screening decision-support model,Yes
+1b,Abstract structured,"Structured abstract with objective, data, methods, results, conclusions",Yes
+2,Background and objectives,Non-invasive screening gap stated; lifestyle-only rationale provided,Yes
+3a,Data sources,BRFSS 2015 (primary + natural prevalence); BRFSS 2021 temporal validation if available,Yes
+3b,Eligibility criteria,All BRFSS respondents with complete lifestyle/demographic fields,Yes
+4a,Outcome definition,Binary diabetes status; Diabetes_binary for 2015; Diabetes_012 (prediabetes excluded) for 2021,Yes
+4b,Outcome measurement,CDC-standardised self-report; same coding across years,Yes
+5,Predictors,10 non-invasive lifestyle/demographic predictors; coding dictionary saved,Yes
+6,Sample size,"70,692 development; 253,680 natural prevalence; stated in participant flow table",Yes
+7,Missing data handling,No missingness in selected features; stated in missingness table,Yes
+8,Statistical methods,XGBoost + isotonic calibration; 5-fold CV; bootstrap 95% CI; Wilcoxon test,Yes
+9,Threshold selection,Selected on calibrated validation probabilities before applying to held-out test set,Yes
+10,Model development,7-model CV comparison; best model selected by ROC-AUC; refitted on full training split,Yes
+11,Model performance,"Discrimination, calibration, net benefit (DCA), subgroup reliability all reported",Yes
+12,Model calibration,"Calibration curve, ECE, Brier score, intercept/slope for all evaluation sets",Yes
+13,Decision-curve analysis,DCA performed for all datasets and reported as figures and tables,Yes
+14,Subgroup analysis,"Age, BMI, sex subgroups; subgroup n and positive count reported; CIs available",Yes
+15,Uncertainty,Bootstrap 95% CI for primary metrics; Wilcoxon p-values for model comparison,Yes
+16,Limitations,Training prevalence mismatch; calibration drift; duplicate profiles; same-source validation stated,Yes
+17,Conclusions,Non-diagnostic framing; deployment-readiness scorecard framed as research framework only,Yes
+18,Funding and conflict,State in manuscript: publicly funded thesis; no commercial conflict,Pending
+19,Code and data availability,Code on GitHub/Zenodo; BRFSS data from CDC/Kaggle (public),Pending

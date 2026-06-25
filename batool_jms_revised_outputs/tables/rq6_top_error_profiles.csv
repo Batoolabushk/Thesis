@@ -1,0 +1,188 @@
+AgeGroup,BMICategory,SexGroup,error_type_default,n
+55–64,Obese II/III,Female,true_positive,415
+65–74,Obese I,Male,true_positive,399
+65–74,Obese II/III,Female,true_positive,362
+65–74,Obese I,Female,true_positive,361
+55–64,Normal weight,Female,true_negative,337
+65–74,Overweight,Male,true_positive,318
+55–64,Obese I,Male,true_positive,285
+65–74,Obese II/III,Male,true_positive,276
+55–64,Overweight,Female,true_negative,264
+55–64,Obese II/III,Male,true_positive,257
+45–54,Normal weight,Female,true_negative,250
+55–64,Obese I,Female,true_positive,246
+75+,Overweight,Male,true_positive,241
+45–54,Overweight,Female,true_negative,241
+65–74,Normal weight,Female,true_negative,236
+65–74,Overweight,Female,true_positive,236
+75+,Overweight,Female,true_positive,233
+55–64,Overweight,Male,true_negative,230
+45–54,Overweight,Male,true_negative,227
+65–74,Overweight,Male,false_positive,190
+45–54,Obese II/III,Female,true_positive,189
+75+,Obese I,Female,true_positive,185
+18–34,Normal weight,Female,true_negative,169
+35–44,Normal weight,Female,true_negative,167
+75+,Obese I,Male,true_positive,165
+55–64,Overweight,Male,true_positive,165
+75+,Normal weight,Female,true_negative,164
+65–74,Overweight,Female,false_positive,159
+65–74,Overweight,Female,true_negative,154
+55–64,Obese I,Male,false_positive,153
+35–44,Overweight,Male,true_negative,152
+45–54,Obese II/III,Male,true_positive,151
+65–74,Obese I,Female,false_positive,148
+65–74,Obese I,Male,false_positive,145
+55–64,Normal weight,Male,true_negative,140
+18–34,Overweight,Male,true_negative,140
+75+,Overweight,Male,false_positive,139
+18–34,Normal weight,Male,true_negative,139
+55–64,Overweight,Male,false_negative,138
+35–44,Overweight,Female,true_negative,137
+55–64,Overweight,Female,false_negative,136
+75+,Overweight,Female,false_positive,135
+55–64,Overweight,Female,true_positive,127
+45–54,Normal weight,Male,true_negative,124
+75+,Obese II/III,Female,true_positive,124
+55–64,Obese I,Female,false_positive,120
+18–34,Overweight,Female,true_negative,110
+55–64,Obese II/III,Female,false_positive,109
+55–64,Overweight,Male,false_positive,102
+65–74,Normal weight,Female,false_negative,99
+35–44,Obese I,Female,true_negative,95
+75+,Normal weight,Female,false_negative,94
+65–74,Normal weight,Male,true_negative,92
+35–44,Obese I,Male,true_negative,91
+65–74,Overweight,Male,true_negative,90
+45–54,Overweight,Male,false_negative,89
+75+,Normal weight,Male,true_positive,87
+65–74,Overweight,Female,false_negative,86
+45–54,Obese I,Male,true_negative,84
+45–54,Obese II/III,Female,false_positive,80
+45–54,Obese II/III,Male,false_positive,80
+55–64,Obese II/III,Male,false_positive,80
+45–54,Obese I,Female,true_positive,80
+18–34,Obese I,Male,true_negative,79
+55–64,Normal weight,Female,false_negative,78
+45–54,Obese I,Male,true_positive,76
+45–54,Overweight,Female,false_negative,76
+45–54,Obese I,Female,true_negative,76
+35–44,Normal weight,Male,true_negative,75
+55–64,Overweight,Female,false_positive,74
+65–74,Obese II/III,Female,false_positive,72
+75+,Obese I,Female,false_positive,69
+75+,Overweight,Female,true_negative,68
+55–64,Normal weight,Male,false_negative,67
+75+,Obese II/III,Male,true_positive,62
+45–54,Obese I,Male,false_negative,61
+18–34,Obese I,Female,true_negative,61
+35–44,Obese II/III,Female,true_positive,60
+65–74,Overweight,Male,false_negative,58
+65–74,Normal weight,Male,true_positive,57
+45–54,Obese I,Male,false_positive,56
+75+,Obese I,Male,false_positive,56
+75+,Normal weight,Male,false_positive,55
+18–34,Obese II/III,Female,true_negative,54
+65–74,Normal weight,Male,false_negative,53
+75+,Normal weight,Male,true_negative,51
+65–74,Normal weight,Male,false_positive,51
+55–64,Obese I,Female,true_negative,50
+45–54,Obese I,Female,false_negative,49
+65–74,Obese II/III,Male,false_positive,48
+35–44,Obese II/III,Female,true_negative,48
+45–54,Obese I,Female,false_positive,46
+45–54,Normal weight,Female,false_negative,45
+35–44,Obese II/III,Female,false_positive,41
+75+,Normal weight,Female,true_positive,40
+35–44,Obese II/III,Female,false_negative,39
+75+,Normal weight,Male,false_negative,39
+55–64,Obese I,Female,false_negative,38
+35–44,Overweight,Female,false_negative,38
+35–44,Obese I,Male,false_negative,37
+55–64,Obese I,Male,true_negative,37
+35–44,Obese II/III,Male,true_positive,37
+35–44,Overweight,Male,false_negative,35
+75+,Overweight,Female,false_negative,34
+35–44,Obese II/III,Male,true_negative,34
+75+,Obese II/III,Female,false_positive,34
+35–44,Obese I,Female,false_negative,32
+75+,Normal weight,Female,false_positive,32
+35–44,Obese II/III,Male,false_negative,32
+45–54,Normal weight,Male,false_negative,30
+55–64,Obese I,Male,false_negative,30
+65–74,Normal weight,Female,true_positive,29
+18–34,Obese II/III,Male,true_negative,29
+45–54,Overweight,Female,true_positive,26
+35–44,Obese II/III,Male,false_positive,24
+18–34,Obese II/III,Female,false_negative,22
+45–54,Overweight,Female,false_positive,21
+45–54,Obese II/III,Male,true_negative,21
+65–74,Normal weight,Female,false_positive,21
+45–54,Overweight,Male,true_positive,19
+45–54,Overweight,Male,false_positive,19
+35–44,Normal weight,Male,false_negative,19
+55–64,Normal weight,Male,true_positive,16
+45–54,Underweight,Female,true_negative,15
+35–44,Normal weight,Female,false_negative,15
+45–54,Obese II/III,Female,true_negative,15
+55–64,Underweight,Female,true_negative,15
+18–34,Underweight,Female,true_negative,14
+75+,Overweight,Male,true_negative,14
+65–74,Underweight,Female,true_negative,14
+65–74,Obese I,Female,true_negative,14
+18–34,Obese I,Male,false_negative,13
+18–34,Obese I,Female,false_negative,13
+75+,Underweight,Female,true_negative,12
+18–34,Obese II/III,Female,true_positive,12
+18–34,Obese II/III,Female,false_positive,12
+18–34,Overweight,Female,false_negative,12
+35–44,Obese I,Male,true_positive,11
+45–54,Obese II/III,Female,false_negative,11
+55–64,Normal weight,Male,false_positive,9
+55–64,Normal weight,Female,true_positive,9
+35–44,Obese I,Female,true_positive,8
+18–34,Normal weight,Female,false_negative,7
+55–64,Normal weight,Female,false_positive,7
+18–34,Normal weight,Male,false_negative,7
+35–44,Underweight,Female,true_negative,7
+75+,Obese II/III,Male,false_positive,6
+75+,Overweight,Male,false_negative,6
+45–54,Obese II/III,Male,false_negative,6
+75+,Underweight,Female,false_negative,6
+65–74,Obese I,Female,false_negative,6
+18–34,Overweight,Male,false_negative,6
+18–34,Obese II/III,Male,false_negative,5
+65–74,Underweight,Female,false_negative,5
+35–44,Obese I,Female,false_positive,4
+65–74,Underweight,Male,true_negative,4
+45–54,Normal weight,Female,true_positive,4
+35–44,Obese I,Male,false_positive,4
+55–64,Underweight,Male,true_negative,4
+55–64,Underweight,Female,false_negative,4
+65–74,Underweight,Male,false_positive,4
+65–74,Obese I,Male,true_negative,3
+55–64,Obese II/III,Female,true_negative,3
+65–74,Underweight,Male,true_positive,3
+55–64,Obese II/III,Female,false_negative,3
+18–34,Obese II/III,Male,true_positive,2
+75+,Obese I,Female,false_negative,2
+35–44,Underweight,Male,true_negative,2
+18–34,Obese II/III,Male,false_positive,2
+18–34,Underweight,Male,true_negative,2
+45–54,Normal weight,Male,false_positive,2
+75+,Underweight,Male,true_positive,2
+65–74,Obese II/III,Female,true_negative,2
+55–64,Underweight,Male,true_positive,2
+55–64,Underweight,Male,false_negative,2
+45–54,Underweight,Male,true_negative,2
+75+,Underweight,Male,false_positive,2
+35–44,Underweight,Female,false_negative,1
+18–34,Underweight,Male,false_negative,1
+45–54,Normal weight,Male,true_positive,1
+35–44,Overweight,Male,true_positive,1
+45–54,Underweight,Female,false_negative,1
+45–54,Underweight,Male,false_negative,1
+65–74,Underweight,Male,false_negative,1
+65–74,Obese II/III,Female,false_negative,1
+65–74,Obese I,Male,false_negative,1
+75+,Underweight,Male,true_negative,1

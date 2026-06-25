@@ -1,0 +1,22 @@
+{
+  "best_model_name": "XGBoost",
+  "features": [
+    "BMI",
+    "Smoker",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "calibration": "isotonic_cv5",
+  "thresholds": {
+    "default_0_50": 0.5,
+    "youden_j": 0.53,
+    "recall_at_least_80": 0.35000000000000003
+  },
+  "note_C2": "This model was calibrated on a 50/50 balanced dataset. Predicted probabilities are not directly interpretable as absolute risk at natural diabetes prevalence (~14%). Prevalence-adjusted recalibration is required for deployment."
+}

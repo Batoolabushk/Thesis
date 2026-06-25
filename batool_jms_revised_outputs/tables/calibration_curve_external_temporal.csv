@@ -1,0 +1,11 @@
+dataset,bin,mean_predicted_probability,observed_positive_rate
+temporal_validation_BRFSS2021 (same-source — NOT independent external),1,0.05282048807487751,0.011133734783173765
+temporal_validation_BRFSS2021 (same-source — NOT independent external),2,0.10803189162540612,0.021499353726841877
+temporal_validation_BRFSS2021 (same-source — NOT independent external),3,0.18544069970853913,0.04015654245363281
+temporal_validation_BRFSS2021 (same-source — NOT independent external),4,0.2639070266078728,0.06834644269652936
+temporal_validation_BRFSS2021 (same-source — NOT independent external),5,0.35542825548927454,0.09951477341651503
+temporal_validation_BRFSS2021 (same-source — NOT independent external),6,0.4432221398734082,0.13193481276005548
+temporal_validation_BRFSS2021 (same-source — NOT independent external),7,0.5274641341744639,0.16654495468018385
+temporal_validation_BRFSS2021 (same-source — NOT independent external),8,0.6094547274415029,0.21881694574389018
+temporal_validation_BRFSS2021 (same-source — NOT independent external),9,0.6902826033872721,0.2854979174555093
+temporal_validation_BRFSS2021 (same-source — NOT independent external),10,0.8071559809200319,0.41648793565683645

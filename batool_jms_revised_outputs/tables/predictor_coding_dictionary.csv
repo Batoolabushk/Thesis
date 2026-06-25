@@ -1,0 +1,11 @@
+predictor,group,coding,non_invasive
+BMI,Lifestyle/anthropometric,Body mass index (continuous numeric),True
+Smoker,Lifestyle,"0 = no, 1 = yes",True
+PhysActivity,Lifestyle,"0 = no, 1 = yes",True
+Fruits,Lifestyle,"0 = no daily fruit, 1 = yes",True
+Veggies,Lifestyle,"0 = no daily veg, 1 = yes",True
+HvyAlcoholConsump,Lifestyle,"0 = no, 1 = yes",True
+Sex,Demographic,"BRFSS: 0 = female, 1 = male",True
+Age,Demographic,BRFSS age category code (1–13),True
+Education,Socio-demographic,BRFSS education level code (1–6),True
+Income,Socio-demographic,BRFSS income category code (1–8),True

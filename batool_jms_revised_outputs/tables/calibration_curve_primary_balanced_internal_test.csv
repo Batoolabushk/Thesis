@@ -1,0 +1,11 @@
+dataset,bin,mean_predicted_probability,observed_positive_rate
+primary_balanced_internal_test,1,0.0748173230354649,0.06501766784452297
+primary_balanced_internal_test,2,0.1850838661393648,0.17642907551164433
+primary_balanced_internal_test,3,0.3028583995064624,0.3205038488453464
+primary_balanced_internal_test,4,0.400282414483818,0.41045845272206305
+primary_balanced_internal_test,5,0.49865096806637377,0.49540636042402825
+primary_balanced_internal_test,6,0.5756837994836057,0.5750341064120055
+primary_balanced_internal_test,7,0.6422344068113569,0.6376080691642652
+primary_balanced_internal_test,8,0.6996314739191105,0.7072297780959198
+primary_balanced_internal_test,9,0.7733582253295106,0.7787732598208132
+primary_balanced_internal_test,10,0.8493843608636117,0.8417582417582418
